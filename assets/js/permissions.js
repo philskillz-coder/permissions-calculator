@@ -83,7 +83,7 @@ angular.module('permissionsCalc', ['themes'])
                     }
                 }
             }
-            $location.search('v', value);
+            $location.replace().search('v', value);
             return value;
         }
         $scope.calculateExplanation = function()
